@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HardWare Eshop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?familly=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+         <div class="logo">
+            <img src="logo.png" width="440px">
+         </div>
+         <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+       <a href=""><img src="basket.png" width="30px" height="30px"></a> 
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Upgrade your gaming experience!</h1>
+            <p>Shop from our HardWare Eshop for CPUs,GPUs,Motherboards and more.<br>Get top quality components from leading brands.Fast shiping and hassle-free returns!!</p>
+            <a href="" class="btn">Explore &#8594; </a>
+        </div>
+        <div class="col-2">
+            <img src="4090.png">
+        </div>
+    </div>
+   </div>
+</div>
+   <!-----slideshow-------->
+
+
+   <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+     <a href=""><img src="msimobo.jpg" style="width:900px" style="height:600"></a> 
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+     <a href=""><img src="rogmobo.jpg" style="width:900px" style="height:600"></a> 
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+     <a href=""><img src="tuf mobo.jpeg" style="width:900px" style="height:600"></a> 
+
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+<!-------------slideshow---------------->
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+    </script>
+
+<!--------products----------->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+               <a href=""><img src="6750xt.jpeg"></a>
+                <h4>Asus RX6750xt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>650.00€</p>
+                
+            </div>
+            <div class="col-4">
+             <a href=""><img src="4090msi.jpeg"></a>
+                <h4>MSI 4090</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>2599.99€</p>
+                
+            </div>
+            <div class="col-4">
+              <a href=""><img src="ryzen9.jpg"></a>
+                <h4>AMD ryzen 9 5000 series
+                </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>600.00€</p>
+                
+            </div>
+            <div class="col-4">
+                <a href=""><img src="i9xtreme.jpeg"></a>
+                <h4>intel i9 extreme</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>1340.00€</p>
+                
+            </div>
+        </div>
+    </div>
+<!-------------offer------------>
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="gskill.jpeg" class="offer-img">
+            </div>
+            <div class="col-2">
+                <h1>Exclusively Available on EshopHardware:</h1>
+                <h2>Gskill ddr4 3600Mhz 32gb</h2>
+                <p>
+                    Get lightning-fast performance with G.Skill's 32GB DDR4 RAM. 
+                    Perfect for gaming, video editing, and multitasking,
+                    this high-capacity memory module offers low power consumption and top-of-the-line speed. 
+                    Upgrade your computer with G.Skill and boost its capabilities. Order now on our e-shop!
+                </p>
+                <a href=""class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="endpage">
+        <div class="container">
+            <div class="row">
+                
+                <div class="endpage-col-1">
+                    <img src="logo-modified.png">
+                </div>
+                <div class="endpage-col-2">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and Ios</p>
+                    <div class="app-logo">
+                        <a href=""><img src="playstore.png"></a>
+                        <a href=""><img src="appstore.png"></a>
+                    </div>
+                </div>
+                <div class="endpage-col-3">
+                    <h3>Usefull Links</h3>
+                   <ul>
+                    <a href=""><li>Coupons</li></a> 
+                    <a href=""><li>Blog Post</li></a> 
+                    <a href=""><li>Return Policy</li></a> 
+                    <a href=""><li>Join Affiliate</li></a> 
+                   </ul>
+                </div>
+                <div class="endpage-col-4">
+                    <h3>Follow us</h3>
+                   <ul>
+                   <a href=""><li>Facebook</li></a> 
+                   <a href=""><li>Instagram</li></a> 
+                   <a href=""><li>Twitter</li></a> 
+                   <a href=""><li>Youtube</li></a> 
+                   </ul>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
